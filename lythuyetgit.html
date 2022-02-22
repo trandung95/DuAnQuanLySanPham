@@ -19,5 +19,10 @@ làm việc nhóm:
     git branch => xem mình đang đứng ở nhánh nào
     chuyển đổi và merge nhánh:
         local:
-            git checkout [ten_nhanh_local]
-            git merge
+            git checkout [ten_nhanh_local] => trước khi checkout nhớ commit trước
+            git merge [ten_nhanh_muon_merge]
+        server
+            git pull origin [ten_nhanh_server_muon_merge] => merge nhánh mình với nhánh server tại nhánh mình đang đứng
+        quay về version cũ:
+            git checkout [mã véion] => lưu ý không commit hoặc push version cũ mà chép nó ra file bên ngoài và quay về nhánh hiện tại để sử dụng code file đó
+    luôn nhớ commit trước khi checkout để tránh tình trạng mất code
