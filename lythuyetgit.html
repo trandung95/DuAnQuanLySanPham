@@ -1,0 +1,11 @@
+các câu lệnh cơ bản:
+    git init - khởi tạo folder git ở local
+    git config --global user.email'email@email.com' =>lệnh cấu hình tài khoản trên máy tính 1 lần
+    git remote add origin https://github.com/trandung95/DuAnQuanLySanPham.git =>kết nối giữa local git và sever git
+lệnh thường dùng:
+    git add -A (-A|tên file|tên folder) => chọn ra các file sẽ backup lại
+    git status => kiểm tra các file đã chọn để backup
+    git commit -m 'ghi chú' => tạo 1 version backup tại client
+    git push:
+        push -u origin tên_nhánh => đưa các commit version lên server và tạo nhánh (nếu chưa có)
+        push => đưa các commit version lên server tại nhánh hiện tại
